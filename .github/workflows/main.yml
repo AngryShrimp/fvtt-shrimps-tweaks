@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Zip files
         working-directory: .
@@ -18,7 +18,7 @@ jobs:
       - name: Get Version
         shell: bash
         id: get-version
-        run: echo "version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
+        run: echo "version=$(node ./.github/workflows/get-versions.js)" >> $GITHUB_OUTPUT
 
       - name: Create Release
         id: create-release
