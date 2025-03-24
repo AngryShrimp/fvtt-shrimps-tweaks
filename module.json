@@ -1,7 +1,7 @@
 {
   "id": "shrimps-tweaks",
   "title": "Shrimp's Tweaks",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -18,5 +18,6 @@
   ],
   "scripts": [
     "scripts/damage-formula-sheet.js"
-  ]
+  ],
+  "url": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks"
 }
