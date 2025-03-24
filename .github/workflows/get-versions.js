@@ -5,7 +5,6 @@ let version = JSON.parse(fs.readFileSync(filename, 'utf8')).version;
 // Read the JSON file
 fs.readFile(filename, 'utf8', (err, data) => {
     if (err) {
-        console.error('Error reading the file:', err);
         return;
     }
     
@@ -23,14 +22,12 @@ fs.readFile(filename, 'utf8', (err, data) => {
         // Write back to the file
         fs.writeFile(filename, updatedJson, 'utf8', (writeErr) => {
             if (writeErr) {
-                console.error('Error writing to file:', writeErr);
                 return;
             }
-            console.log('JSON file successfully updated!');
         });
 
     } catch (parseErr) {
-        console.error('Error parsing JSON:', parseErr);
+        return;
     }
 });
 
