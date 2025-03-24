@@ -31,4 +31,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifacts: '.module.json, ./module.zip'
           tag: ${{ steps.get-version.outputs.version }}
+          skipIfReleaseExists: true
           
