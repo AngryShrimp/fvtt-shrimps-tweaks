@@ -1,0 +1,35 @@
+.weapon-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 10px;
+}
+
+.weapon-stats .to-hit 
+.weapon-stats .damage {
+    font-size: 14px;
+}
+
+.damage {
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.to-hit {
+    width: 80px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.stat-value {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.stat-label {
+    font-size: 8px;
+    color: grey;
+}

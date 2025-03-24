@@ -1,0 +1,22 @@
+{
+  "id": "shrimps-tweaks",
+  "title": "Shrimp's Tweaks",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "styles": [
+    "styles/damage-formula-sheet.css"
+  ],
+  "scripts": [
+    "scripts/damage-formula-sheet.js"
+  ]
+}
