@@ -22,6 +22,6 @@
     "scripts/shrimps-tweaks.js"
   ],
   "url": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks",
-  "download": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/download/latest/module.zip",
-  "manifest": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/download/latest/module.json"
+  "download": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/latest/download/module.zip",
+  "manifest": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/latest/download/module.json"
 }
