@@ -1,7 +1,7 @@
 {
   "id": "shrimps-tweaks",
   "title": "Shrimp's Tweaks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "system": ["dnd5e"],
   "compatibility": {
     "minimum": "12",
@@ -14,18 +14,6 @@
       "path": "languages/en.json"
     }
   ],
-  "relationships": {
-    "requires": [
-      {
-        "id": "lib-wrapper",
-        "type": "module",
-        "compatibility": {
-          "minimum": "1.0.0.0",
-          "verified": "1.12.6.0"
-        }
-      }
-    ]
-  },
   "styles": [
     "styles/damage-formula-sheet.css",
     "styles/ignore-coin-weight.css"
