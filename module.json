@@ -1,7 +1,8 @@
 {
   "id": "shrimps-tweaks",
   "title": "Shrimp's Tweaks",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "system": ["dnd5e"],
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -13,11 +14,24 @@
       "path": "languages/en.json"
     }
   ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.0.0.0",
+          "verified": "1.12.6.0"
+        }
+      }
+    ]
+  },
   "styles": [
-    "styles/damage-formula-sheet.css"
+    "styles/damage-formula-sheet.css",
+    "styles/ignore-coin-weight.css"
   ],
-  "scripts": [
-    "scripts/damage-formula-sheet.js"
+  "esmodules": [
+    "scripts/shrimps-tweaks.js"
   ],
   "url": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks",
   "download": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/download/0.0.4/module.zip",

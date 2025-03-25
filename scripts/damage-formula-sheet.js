@@ -1,18 +1,17 @@
-class ShrimpsTweaks {
-    static ID = 'shrimps-tweaks';
+export default class DamageFormulaSheet {
+    static ID = 'damage-formula-sheet';
 
     static SHOULD_LOG = true;
 
     static FLAGS = {
-        SHRIMPS_TWEAKS: 'shrimps-tweaks'
+        SHRIMPS_TWEAKS: 'damage-formula-sheet'
     }
 
     static TEMPLATES = {
-        SHRIMPS_TWEAKS: `modules/${this.ID}/templates/damage-formula-sheet.hbs`
+        SHRIMPS_TWEAKS: `modules/shrimps-tweaks/templates/damage-formula-sheet.hbs`
     }
 
     static log(...args) {
-    
         if (this.SHOULD_LOG) {
             console.log(this.ID, '|', ...args);
         }
@@ -21,10 +20,9 @@ class ShrimpsTweaks {
     static capitalizeFirstLetter(val) {
         return String(val).charAt(0).toUpperCase() + String(val).slice(1);
     }
-}
 
-Hooks.on('renderActorSheet', (app, html, data) => {
-    let weaponList = html.find(".items-list .item");
+    static RenderDamageFormula(html, data) {
+        let weaponList = html.find(".items-list .item");
 
     weaponList.each((index, element) => {
         let itemId = $(element).data("item-id");
@@ -50,7 +48,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
                     </div>
                     <div class="damage">
                         <span class="stat-value">${damageFormula[0]}</span>
-                        <div class="stat-label">${ShrimpsTweaks.capitalizeFirstLetter(damageType[0])} Damage</div>
+                        <div class="stat-label">${DamageFormulaSheet.capitalizeFirstLetter(damageType[0])} Damage</div>
                     </div>
                 </div>
             `;
@@ -58,4 +56,5 @@ Hooks.on('renderActorSheet', (app, html, data) => {
             $(tooltipHTML).insertBefore($(element).find(".item-price")[0]);
         }
     });
-})
+    }
+}
