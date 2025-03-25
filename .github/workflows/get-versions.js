@@ -13,7 +13,6 @@ fs.readFile(filename, 'utf8', (err, data) => {
         let jsonData = JSON.parse(data);
 
         let version = jsonData.version;
-        jsonData.manifest = `https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/download/${version}/module.json`;
         jsonData.download = `https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/download/${version}/module.zip`;
 
         // Convert back to JSON string with formatting
