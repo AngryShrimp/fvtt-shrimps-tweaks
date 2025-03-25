@@ -1,7 +1,7 @@
 {
   "id": "shrimps-tweaks",
   "title": "Shrimp's Tweaks",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "system": ["dnd5e"],
   "compatibility": {
     "minimum": "12",
