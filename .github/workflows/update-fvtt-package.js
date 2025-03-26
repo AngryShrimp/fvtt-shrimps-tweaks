@@ -22,7 +22,7 @@ let response = await fetch("https://api.foundryvtt.com/_api/packages/release_ver
     method: "POST",
     body: JSON.stringify({
         "id": "shrimps-tweaks",
-        "dry-run": true,
+        "dry-run": false,
         "release": {
             "version": version,
             "manifest": "https://github.com/AngryShrimp/fvtt-shrimps-tweaks/releases/latest/download/module.json",
