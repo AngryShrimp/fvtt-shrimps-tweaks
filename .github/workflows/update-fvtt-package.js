@@ -35,5 +35,5 @@ let response = await fetch("https://api.foundryvtt.com/_api/packages/release_ver
         }
     })
 });
-response_data = await response.json();
+let response_data = await response.json();
 console.log(response_data);
