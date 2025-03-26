@@ -32,4 +32,12 @@ jobs:
           artifacts: './module.json, ./module.zip'
           tag: ${{ steps.get-version.outputs.version }}
           skipIfReleaseExists: true
+      
+      - name: Update Foundry
+        id: update-foundry
+        shell: bash
+        env:
+          FVTT_SECRET: ${{ secrets.FVTT_SECRET }}
+          VERSION: ${{ steps.get-version.outputs.version }}
+        run: node ./.github/workflows/update-fvtt-package.js
           
