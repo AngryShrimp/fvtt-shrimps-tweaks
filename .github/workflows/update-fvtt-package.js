@@ -14,7 +14,7 @@ if (!version) {
 console.log("Secret is securely loaded (but not printed for security reasons).");
 console.log("Version is ", version);
 
-response = await fetch("https://api.foundryvtt.com/_api/packages/release_version/", {
+let response = await fetch("https://api.foundryvtt.com/_api/packages/release_version/", {
     headers: {
         'Content-Type': 'application/json',
         'Authorization': secretKey
