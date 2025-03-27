@@ -5,7 +5,6 @@
 Just some simple tweaks that I use in the DnD5E system
 
 Currently:
-- Ignores Coin Weight
 - Preview Weapon's To Hit and Damage stats in the actor sheets for weapons
   - ![image](https://github.com/user-attachments/assets/fbf81084-a905-401b-a70b-7199e4a32911)
 

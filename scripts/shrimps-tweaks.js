@@ -1,5 +1,4 @@
 import DamageFormulaSheet from './damage-formula-sheet.js';
-import IgnoreCoinWeight from './ignore-coin-weight.js';
 
 export class ShrimpsTweaks {
     static ID = 'shrimps-tweaks';
@@ -17,6 +16,6 @@ Hooks.on('renderActorSheet', (app, html, data) => {
     DamageFormulaSheet.RenderDamageFormula(html, data);
 });
 
-Hooks.on("init", () => {    
-    IgnoreCoinWeight.ignoreCoinWeight(CONFIG)
-});
+// Hooks.on("init", () => {    
+//     IgnoreCoinWeight.ignoreCoinWeight(CONFIG)
+// });
